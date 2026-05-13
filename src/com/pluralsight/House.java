@@ -35,15 +35,17 @@ public class House extends Asset
     @Override
     public double getValue() // Change value getValue = sqaureFoot * (condition value)
     {
+        double priceByCondition = 0;
         switch(condition)
         {
-            case "1": get
-            case "2":
-            case "3":
-            case "4":
+            case 1: priceByCondition = 180.00; break;
+            case 2: priceByCondition = 130.00; break;
+            case 3: priceByCondition = 90.00;  break;
+            case 4: priceByCondition = 80.00;  break;
         }
+        double sqftValue = priceByCondition * squareFoot;
+        double lotSizeValue = lotSize * .25;
+        return sqftValue + lotSizeValue;
     }
-
-
 }
 
