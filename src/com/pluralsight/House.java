@@ -10,9 +10,9 @@ public class House extends Asset
     // String yearBuilt
 
     // Constructor
-    public House(String desription, String dateAcquired, double originalCost, String address, int condition, int squareFoot, int lotSize)
+    public House(String description, String dateAcquired, double originalCost, String address, int condition, int squareFoot, int lotSize)
     {
-        super(desription, dateAcquired, originalCost);
+        super(description, dateAcquired, originalCost);
         this.address = address;
         this.condition = condition;
         this.squareFoot = squareFoot;
