@@ -18,10 +18,13 @@ public class Main
         for(int i = 0; i < allAssets.size(); i++)
         {
             Asset asset = allAssets.get(i);
+            System.out.println("------------------------");
+            System.out.println();
             System.out.println(asset.getDescription());
-            System.out.println(asset.getDateAcquired());
-            System.out.println(asset.getOriginalCost());
-            System.out.println(asset.getValue());
+            System.out.println("Date Acquired: " + asset.getDateAcquired());
+            System.out.println("Purchase Price: $" + asset.getOriginalCost());
+            System.out.println("Current Value:  $" + asset.getValue());
+            System.out.println();
         }
 
     }
